@@ -6,6 +6,9 @@ router.post('/add/user',(req,res)=>{
 Studentcontroller.addStudent(req,res)
 })
 router.get('/users',(req,res)=>{
-    Studentscontroller.getStudents(req,res)
+    Studentcontroller.getStudents(req,res)
+})
+router.get('/user/:rollNo',(req,res)=>{
+    Studentcontroller.getStudentsbyrollNo(req,res)
 })
 module.exports= router
